@@ -1,0 +1,6 @@
+showHands,0
+defaultSkins,true
+weaponOffX,1.3
+weaponOffY,1.4
+weaponOffZ,1.3
+fpsFOV,60
