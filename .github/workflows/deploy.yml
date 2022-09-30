@@ -1,0 +1,24 @@
+name: Pack mod
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Zip and push
+        run: |
+          zip -r ../mod.zip .
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --local user.name 'GitHub Action'
+          git checkout --orphan mod
+          git rm -rf .
+          mv ../mod.zip mod.zip
+          git add .
+          git commit -m 'Push mod'
+          git push --force origin mod
