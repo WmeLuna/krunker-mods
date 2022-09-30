@@ -1,3 +1,7 @@
-#tlInfHold {
-  display:none!important
+#tlInfHold, #aHider {
+  display:none!important;
+  visibilty: hidden!important;
+}
+#subLogoButtons {
+  bottom: 0 !important;
 }
