@@ -1,7 +1,10 @@
 #tlInfHold, #aHider {
-  display:none!important;
-  visibilty: hidden!important;
+  display: none !important;
+  visibility: hidden !important;
 }
 #subLogoButtons {
   bottom: 0 !important;
+}
+.menuItem .menBtnIcn {
+  color: #d747f5 !important;
 }
