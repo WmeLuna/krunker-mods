@@ -21,6 +21,7 @@ jobs:
           git config --local user.name 'GitHub Action'
           git checkout --orphan mod
           git rm -rf .
+          rm -rf init.js manifest.json
           mv ../mod.zip mod.zip
           mv ../KrunkerResourceSwapper.zip KrunkerResourceSwapper.zip
           git add .
