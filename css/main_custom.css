@@ -1,6 +1,13 @@
-#tlInfHold, #aHider {
+@font-face {
+  font-family: "gamefont";
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+}
+#tlInfHold, #aHider,#termsInfo,#headerRightSocial,#newsHolder {
   display: none !important;
   visibility: hidden !important;
+}
+#aHider, #aHolder, .endAHolder, #tlInfHold, #newsHolder, .imageButton, #editorBtnM, #headerRight > .verticalSeparator, #onetrust-consent-sdk, #gameNameHolder, #voiceDisplay, #seasonLabel, .setSugBox2 {
+	display: none !important;
 }
 #subLogoButtons {
   bottom: 0 !important;
@@ -8,3 +15,23 @@
 .menuItem .menBtnIcn {
   color: #d747f5 !important;
 }
+#menuClassContainer {
+  top: unset!important;
+}
+#menuClassNameTag {
+  margin-top: -180px;
+}
+.healthBarSeg {
+  margin-right: -2px;
+  border-radius: 0;
+}
+.hpBSeg {
+  border-radius: 0;
+}
+#healthBar{
+  overflow: hidden;
+  border-radius: 5px;
+}
+div#seasonLabel::after {
+  content: "  Wme";
+}/**/
