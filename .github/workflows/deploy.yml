@@ -14,11 +14,15 @@ jobs:
       - name: Zip and push
         run: |
           zip -r ../mod.zip .
+          wget https://github.com/Tehchy/Krunker-Resource-Swapper/raw/master/init.js
+          wget https://github.com/Tehchy/Krunker-Resource-Swapper/raw/master/manifest.json
+          zip -r ../KrunkerResourceSwapper.zip .
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --local user.name 'GitHub Action'
           git checkout --orphan mod
           git rm -rf .
           mv ../mod.zip mod.zip
+          mv ../KrunkerResourceSwapper.zip KrunkerResourceSwapper.zip
           git add .
           git commit -m 'Push mod'
           git push --force origin mod
