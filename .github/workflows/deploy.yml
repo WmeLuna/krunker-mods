@@ -14,10 +14,10 @@ jobs:
       - name: Zip and push
         run: |
           rm -rf .github .vscode README.md
-          zip -r ../mod.zip . -x .git -1 -q
+          zip -r ../mod.zip . -x ".git/*" -1 -q
           wget https://github.com/Tehchy/Krunker-Resource-Swapper/raw/master/init.js -q
           wget https://github.com/Tehchy/Krunker-Resource-Swapper/raw/master/manifest.json -q
-          zip -r ../KrunkerResourceSwapper.zip . -x .git -1 -q
+          zip -r ../KrunkerResourceSwapper.zip . -x ".git/*" -1 -q
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --local user.name 'GitHub Action'
           git checkout --orphan mod
