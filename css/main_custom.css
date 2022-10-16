@@ -2,7 +2,7 @@
   font-family: "gamefont";
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
 }
-#tlInfHold, #aHider,#termsInfo,#headerRightSocial,#newsHolder {
+#tlInfHold, #aHider,#termsInfo,#headerRightSocial,#newsHolder, #loadEditrBtn, #loadInfoRHolder, #loadTipsHolder, #loadInfoLHolder {
   display: none !important;
   visibility: hidden !important;
 }
@@ -31,6 +31,9 @@
 #healthBar{
   overflow: hidden;
   border-radius: 5px;
+}
+#initLoader {
+  background-color: #141414 !important
 }
 div#seasonLabel::after {
   content: "  Wme";
