@@ -37,4 +37,31 @@
 }
 div#seasonLabel::after {
   content: "  Wme";
-}/**/
+}
+
+.verticalSeparator, #menuUsernameContainer img { display: none}
+#menuUsernameContainer, .krInfo, .mainJunkInfo {
+  margin-top: unset;
+}
+#mailContainer {display: none}
+#menuUsernameContainer {
+    display: block
+}
+
+#menuItemContainer {top: 0}
+.headerBarLeft {left: 130px}
+#menuAccountUsername::before {
+    content: "Welcome, "
+}
+#menuAccountUsername::after {
+    content: "!"
+}
+#menuKRCount::before {
+    content: "You have "
+}
+#menuKRCount {
+    vertical-align: unset
+}
+#menuLvlHold {
+    display: none
+}
