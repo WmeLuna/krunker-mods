@@ -6,7 +6,7 @@
   display: none !important;
   visibility: hidden !important;
 }
-#aHider, #aHolder, .endAHolder, #tlInfHold, #newsHolder, .imageButton, #editorBtnM, #headerRight > .verticalSeparator, #onetrust-consent-sdk, #gameNameHolder, #voiceDisplay, #seasonLabel, .setSugBox2 {
+#aHider, #aHolder, .endAHolder, #tlInfHold, #newsHolder, .imageButton, #editorBtnM, #headerRight > .verticalSeparator, #onetrust-consent-sdk, .setSugBox2 {
 	display: none !important;
 }
 #subLogoButtons {
